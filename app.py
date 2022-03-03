@@ -9,10 +9,10 @@ import plotly.graph_objs as go
 
 myheading1='How to use callbacks'
 tabtitle = 'xkcd'
-list_of_options=['box plot', 'correlation', 'git commit', 'scatterplot']
-list_of_images=['outlier.png', 'correlation.png', 'gitcommit.jpg', 'scatterplot.png', 'good_code.png']
-sourceurl = 'https://xkcd.com/'
-githublink = 'https://github.com/plotly-dash-apps/203-radio-callbacks'
+list_of_options=['football ML', 'ML class', 'no-hire']
+list_of_images=['cartoon-football-world-cup-machine-learning-541.jpeg', 'cartoon-machine-learning-class.jpeg', 'would-not-hire.gif']
+sourceurl = 'https://www.kdnuggets.com/2017/09/cartoon-machine-learning-class.html'
+githublink = 'https://github.com/dpulluri/203-radio-callbacks'
 
 
 ########## Set up the chart
@@ -33,7 +33,6 @@ app.layout = html.Div(children=[
                 {'label':list_of_options[0], 'value':list_of_images[0]},
                 {'label':list_of_options[1], 'value':list_of_images[1]},
                 {'label':list_of_options[2], 'value':list_of_images[2]},
-                {'label':list_of_options[3], 'value':list_of_images[3]},
                 ],
         value=list_of_images[4],
         ),
